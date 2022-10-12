@@ -21,6 +21,7 @@ function Modal({work, visible, setVisible}: Props) {
                 <img className={classes.modalImg} width='150px' height='150px' src={work.pic} alt='image'></img>
                 <div className={classes.modalName}>{work.name}</div>
                 <div className={classes.modalDesc}>{work.desc}</div>
+                <div className={classes.modalTags}>GitHub link: {work.glink}</div>
                 <div className={classes.modalTags}>Technologies used: {work.tags.join(', ')}</div>
             </div>
         </div>

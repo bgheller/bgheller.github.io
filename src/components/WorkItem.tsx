@@ -23,7 +23,7 @@ function WorkItem({number, work}: Props) {
             <div onClick={() => setVisible(true)} className={classes.item}>
                 <div className={classes.number}>{number}</div>
                 <div className={classes.picture}>
-                    <img width='100px' height='100px' src={work.pic} alt='image'></img>
+                    <img width='150px' height='100px' src={work.pic} alt='image'></img>
                 </div>
                 <div className={classes.name}>{work.name}</div>
             </div>
