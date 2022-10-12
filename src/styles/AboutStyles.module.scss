@@ -1,0 +1,45 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .headContainer{
+        margin-top: 3%;
+        display: flex;
+        width: 30%;
+        flex-direction: column;
+        .mainHeadline{
+            font-family: Consolas;
+            font-weight: bold;
+            font-size: 32px;
+            text-align: center;
+        }
+        .mainText{
+            margin-top: 5%;
+            font-family: Consolas;
+            font-size: 24px;
+        }
+    }
+    .bodyContainer {
+        margin-top: 3%;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        .block{
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            .headline{
+                font-family: Consolas;
+                text-align: center;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .text{
+                margin-top: 3%;
+                font-family: Consolas;
+                font-size: 20px;
+            }
+        }
+    }
+}

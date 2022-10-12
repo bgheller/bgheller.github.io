@@ -1,0 +1,19 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+    .textContainer{
+        width: 30%;
+        .headline{
+            font-family: Consolas;
+            font-weight: bold;
+            font-size: 32px;
+            text-align: center;
+        }
+        .text{
+            margin-top: 5%;
+            font-family: Consolas;
+            font-size: 24px;
+        }
+    }
+}

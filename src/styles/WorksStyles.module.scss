@@ -1,0 +1,97 @@
+.itemList{
+    display: flex;
+    width: 100%;
+    //height: 90vh;
+    margin-top: 10px;
+}
+
+.item{
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    border: 3px solid #92DCE5;
+    border-radius: 15px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    transition: 0.2s;
+    &:hover{
+        transition: 0.3s;
+        margin-top: 5px;
+        width: 205px;
+        height: 205px;
+        box-shadow: -9px 10px 8px 0px rgba(0, 0, 0, 0.40);
+    }
+    .number{
+        border: 1px solid #1E201E;
+        border-radius: 3px;
+        margin-left: 5%;
+        padding: 2px 8px;
+        font-family: Consolas;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #F4F5F4;
+    }
+    .picture{
+        //border: 1px solid #1E201E;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .name{
+        font-family: Consolas;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+//modal window classes
+
+.modal{                 //modal window base
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+.active{              //adding this class onclick to the base so the modal becomes visible
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent{         //content of the modal window
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    min-width: 250px;
+    max-width: 1000px;
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Consolas;
+    .modalImg{
+        width: 15%;
+        height: 15%;
+    }
+    .modalName{
+        font-weight: bold;
+        font-size: 32px;
+        margin: 5%;
+    }
+    .modalDesc{
+        font-size: 24px;
+    }
+    .modalTags{
+        font-size: 24px;
+        margin: 5%;
+    }
+}
